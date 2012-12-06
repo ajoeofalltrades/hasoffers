@@ -26,6 +26,10 @@ module HasOffers
         post_request(Target, 'findAllByIds', params)
       end
 
+      def get_thumbnail(params = {})
+        post_request(Target, 'getThumbnail', params)
+      end
+
     end
     
   end

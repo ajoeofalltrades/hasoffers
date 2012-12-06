@@ -18,6 +18,14 @@ module HasOffers
         post_request(Target, 'update', params)
       end
 
+      def find_all(params = {})
+        post_request(Target, 'findAll', params)
+      end
+
+      def find_all_by_ids(params = {})
+        post_request(Target, 'findAllByIds', params)
+      end
+
     end
     
   end

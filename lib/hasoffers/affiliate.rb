@@ -21,6 +21,18 @@ module HasOffers
         post_request(Target, 'update', params)
       end
 
+      def find_all(params = {})
+        post_request(Target, 'findAll', params)
+      end
+
+      def get_offer_payouts(params = {})
+        post_request(Target, 'getOfferPayouts', params)
+      end
+
+      def get_approved_offer_ids(params = {})
+        post_request(Target, 'getApprovedOfferIds', params)
+      end
+
     end
 
   end

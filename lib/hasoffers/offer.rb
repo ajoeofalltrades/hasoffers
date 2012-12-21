@@ -30,6 +30,18 @@ module HasOffers
         post_request(Target, 'getThumbnail', params)
       end
 
+      def set_affiliate_approval(params = {})
+        post_request(Target, 'setAffiliateApproval', params)
+      end
+
+      def set_payout(params = {})
+        post_request(Target, 'setPayout', params)
+      end
+
+      def find_all_affiliate_settings(params = {})
+        post_request(Target, 'findAllAffiliateSettings', params)
+      end
+
     end
     
   end

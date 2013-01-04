@@ -2,6 +2,7 @@ require 'rubygems'
 require 'yaml'
 require 'net/http'
 require 'net/https'
+require 'yajl'
 require 'crack'
 
 # loading base classes which other models depend on

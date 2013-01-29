@@ -42,6 +42,10 @@ module HasOffers
         post_request(Target, 'findAllAffiliateSettings', params)
       end
 
+      def generate_tracking_link(params = {})
+        post_request(Target, 'generateTrackingLink', params)
+      end
+
     end
     
   end

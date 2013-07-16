@@ -11,10 +11,26 @@ module HasOffers
 
       # Assume return_object is set for simplicity which means just the id of offer is returned
       def response_for_offer_create(params)
-        {"response" => { "status" => 1, "data" => rand(1_000_000).to_s } }
+        {"response" => { "status" => 1, "data" => rand(1_000_000).to_s, "errors" => [] } }
       end
 
       def response_for_offer_update(params)
+        {"response" => { "status" => 1, "data" => true, "errors" => [] } }
+      end
+
+      def response_for_offerpixel_create(params)
+        {"response" => { "status" => 1, "data" => rand(1_000_000).to_s, "errors" => [] } }
+      end
+
+      def response_for_offerpixel_update(params)
+        {"response" => { "status" => 1, "data" => true, "errors" => [] } }
+      end
+
+      def response_for_offerurl_create(params)
+        {"response" => { "status" => 1, "data" => rand(1_000_000).to_s, "errors" => [] } }
+      end
+ 
+      def response_for_offerurl_update(params)
         {"response" => { "status" => 1, "data" => true, "errors" => [] } }
       end
 
